@@ -106,7 +106,7 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body onload="$.jStorage.zagrData()" onunload="$.jStorage.sohrData()">
 	
 	<div class="container">
 	
@@ -152,7 +152,19 @@
 	</table>
 	
 	<p><b>NB!</b> Key "test" has a special meaning - if it is updated or deleted, all open windows of the same page will alert the change.</p>
-
+		<script src="../jstorage.zapomni.js"></script>
+	<p>
+		Надстройка zapomni - только для браузеров с поддержкой HTML5.
+		<br/>
+		zapomni plugin - HTML5-compatible browsers only.
+	</p>
+	<p>
+		Просто наберите текст, обновите страницу и убедитесь, что он остался на месте:
+		<br/>
+		Simply type any text, then refresh the page and make sure that the text is here:
+		<br/>
+		<input type="text" id="jStorage-zapomni-demo" data-jstorage-id="jStorage-zapomni-demo"/>
+	</p>
 <p id="moot"></p>
 	<p id="footer">&copy; 2010 - 2012 Andris Reinman, <a href="mailto:andris.reinman@gmail.com">andris.reinman@gmail.com</a><br /><a href="http://www.jstorage.info">jStorage</a> is licensed under <a href="http://www.jstorage.info/static/license.txt">MIT-styled license</a>, so basically you can do whatever you want to do with it.</p>
 	
